@@ -185,11 +185,17 @@ public class OVRMainMenu : MonoBehaviour
 	// the menu RenderTarget
 	OVRVisionGuide VisionGuide = null;
 
-	#region MonoBehaviour Message Handlers
-	/// <summary>
-	/// Awake this instance.
-	/// </summary>
-	void Awake ()
+    public int VRVarsSX { get; private set; }
+    public int VRVarsWidthX { get; private set; }
+    public int VRVarsWidthY { get; private set; }
+    public float AlphaFadeValue { get; private set; }
+    public int VRVarsSY { get; private set; }
+
+    #region MonoBehaviour Message Handlers
+    /// <summary>
+    /// Awake this instance.
+    /// </summary>
+    void Awake ()
 	{    
 		// Find camera controller
 		OVRCameraRig[] CameraControllers;
@@ -308,7 +314,7 @@ public class OVRMainMenu : MonoBehaviour
 			Cursor.visible = false; 
 			Cursor.lockState = CursorLockMode.Locked;
 #else
-			Screen.showCursor = false; 
+			Cursor.visible = false; 
 			Screen.lockCursor = true;
 #endif
 		}

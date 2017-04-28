@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 61ed0c46e527752479605a115a0217dd
+guid: 307a8000ab89bff42bd2851c49571683
 TrueTypeFontImporter:
-  serializedVersion: 2
+  serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
+  fontName: Hamma Mamma Jamma
+  fontNames:
+  - Hamma Mamma Jamma
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
+  ascentCalculationMode: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
